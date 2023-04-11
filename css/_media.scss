@@ -1,0 +1,24 @@
+/**
+  * @author Alex <dev@chuen.com>
+ */
+
+
+
+@mixin media($max, $min: null) {
+	@if $min != null and $min > .02 {
+		$max: $max * 1px;
+		$min: $min * 1px;
+		@if $min > $max {
+			@error 'MIN is bigger than MAX';
+		}
+		@media (min-width: $min - .02) and (max-width: $max) {
+			@content;
+		}
+	} @else {
+		$max: $max * 1px;
+		@media (max-width: $max) {
+			@content;
+		}
+	}
+}
+
