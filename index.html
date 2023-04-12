@@ -8,12 +8,12 @@
 <body>
 <header class="header">
     <div class="header__wrapper">
-        <img class="header__logo" src="img/logo_header.svg">
+        <a href="#topflag"><img class="header__logo" src="img/logo_header.svg"></a>
         <menu class="header__menu">
             <ul class="header__menulist">
-                <li>Приветственное слово</li>
-                <li>Программа</li>
-                <li>Фотоотчеты</li>
+                <li><a href="#greeningsflag">Приветственное слово</a></li>
+                <li><a href="#programflag">Программа</a></li>
+                <li><a href="#photosflag">Фотоотчеты</a></li>
             </ul>
         </menu>
         <button class="header__button">
@@ -21,16 +21,21 @@
         </button>
     </div>
 </header>
-<div class="menuFiller">
-
+<div id="topflag" class="menuFiller">
 </div>
+
+<div class="sidesocial">
+    <a href=""><img src="img/vk_sidebar.svg" alt="ВК"></a>
+    <a href=""><img src="img/telegram_sidebar.svg" alt="telegram"></a>
+</div>
+
 <div class="upperPicture">
     <div class="upperPicture__wrapper">
         <h1>ПРОГРАММА ДЛЯ ЖЕНЩИН — ЧЛЕНОВ РОСПРОФЖЕЛ</h1>
         <img src="img/logo.svg" alt="Логоиип РОСПРОФЖЕЛ">
     </div>
 </div>
-<div class="main">
+<div id="greeningsflag" class="main">
     <div class="greetings">
         <div class="greetings__wrapper">
             <h1>Приветственные слова по гендерной
@@ -73,7 +78,7 @@
 
         </div>
     </div>
-    <div class="program">
+    <div id="programflag" class="program">
         <div class="program__wrapper">
             <h1>Программа мероприятий проекта</h1>
             <!--            Понедельник-->
@@ -414,9 +419,73 @@
 
 
 </div>
-
+<div id="photosflag" class="photos">
+    <div class="photos__wrapper">
+        <h1>Фотоотчеты</h1>
+        <div class="photos__gallery">
+            <div class="photos__item photos__bigitem"></div>
+            <div class="photos__item"></div>
+            <div class="photos__item"></div>
+            <div class="photos__item"></div>
+            <div class="photos__item"></div>
+            <div class="photos__item"></div>
+            <div class="photos__item photos__bigitem"></div>
+        </div>
+    </div>
+    <div class="photos__button">
+        <p>Загрузить еще</p>
+    </div>
+</div>
+<div class="albums">
+    <div class="albums__wrapper">
+        <div class="albums__item">
+            <div class="albums__itempreview"></div>
+            <h2>Название альбома</h2>
+            <p>Краткое описание альбома</p>
+        </div>
+        <div class="albums__item">
+            <div class="albums__itempreview"></div>
+            <h2>Название альбома</h2>
+            <p>Краткое описание альбома</p>
+        </div>
+        <div class="albums__item">
+            <div class="albums__itempreview"></div>
+            <h2>Название альбома</h2>
+            <p>Краткое описание альбома</p>
+        </div>
+        <div class="albums__item">
+            <div class="albums__itempreview"></div>
+            <h2>Название альбома</h2>
+            <p>Краткое описание альбома</p>
+        </div>
+    </div>
+    <div class="albums__button">
+        <p>Загрузить еще</p>
+    </div>
+</div>
 
 <footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__leftside">
+            <img class="footer__leftsidelogo" src="img/logo_footer.svg" alt="Лого РОСПРОФЖЕЛ">
+            <p>Российский профессиональный союз железнодорожников
+                и транспортных строителей (РОСПРОФЖЕЛ)</p>
+            <div class="footer__adress">
+                <img src="img/location.svg" alt="указатель" class="footer__adressimg">
+                <p class="footer__contacts"> Москва, Новорязанская ул., 24 <br>
+                    <a href="https://rosprofzhel.rzd.ru">www.rosprofzhel.rzd.ru</a></p>
+            </div>
+
+        </div>
+        <div class="footer__rightside">
+            <img class="footer__rightsidelogo" src="img/logo_women_footer.svg" alt="Лого женщины РОСПРОФЖЕЛ">
+            <div class="footer__social">
+                <a href=""><img class="footer__vk" src="img/vk.svg" alt="ВК"></a>
+                <a href=""><img class="footer__telegram" src="img/telegram.svg" alt="telegram"></a>
+            </div>
+
+        </div>
+    </div>
 
 </footer>
 
