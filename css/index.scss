@@ -97,11 +97,15 @@ body {
     width: 192px;
     margin-top: -6px;
     margin-right: 162px;
+    @include media(950) {
+      margin-right: 0px;
+    }
   }
 
   &__menulist {
     display: flex;
     justify-content: space-between;
+
   }
 
   &__menulist > li {
