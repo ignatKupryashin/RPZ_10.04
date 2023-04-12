@@ -23,6 +23,20 @@
   font-weight: 700;
 }
 
+//
+//@font-face {
+//  font-family: 'Snell Roundhand';
+//  src: local('Snell Roundhand'),
+//  url("/fonts/Snell_Roundhand.ttf") format('ttf');
+//}
+//
+//@font-face {
+//  font-family: 'Snell Roundhand';
+//  src: local('Snell Roundhand'),
+//  url("/fonts/snellroundhand_bold.otf") format('otf');
+//  font-weight: 700;
+//}
+
 
 * {
   margin: 0;
@@ -54,6 +68,7 @@ body {
     padding-top: 15px;
     position: fixed;
     background-color: white;
+    z-index: 2;
   }
 
   &__button {
@@ -137,7 +152,8 @@ body {
 }
 
 .main {
-
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .greetings {
@@ -147,12 +163,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
+
   }
 
   &__wrapper {
     width: 935px;
+    border-bottom: #F7ECED 2px solid;
   }
 
   &__wrapper > h1 {
@@ -161,6 +178,7 @@ body {
     font-weight: 700;
     line-height: 49px;
     margin-bottom: 68px;
+
   }
 
   &__content {
@@ -175,7 +193,17 @@ body {
     font-size: 16px;
     line-height: 26px;
     margin-right: 106px;
+    margin-bottom: 100px;
+    min-width: 560px;
   }
+
+  &__directorVideoBlock {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
 
   &__directorVideo {
     width: 267px;
@@ -191,8 +219,142 @@ body {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    width: 225px;
   }
 
+}
+
+
+.program {
+  & {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__wrapper {
+    width: 935px;
+  }
+
+  &__wrapper > h1 {
+    color: #88173B;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    margin-bottom: 68px;
+    max-width: 559px;
+    margin-bottom: 72px;
+
+  }
+
+  &__day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  &__dayTitle {
+    display: flex;
+    margin-bottom: 12px;
+
+  }
+
+  &__dayTitleDate {
+    background: #F1C1B1;
+    border-radius: 38px;
+    width: 241px;
+    height: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+
+  }
+
+  &__dayTitleDate > p {
+    font-family: 'Snell Roundhand';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 50px;
+    color: #88173B;
+    margin-bottom: 13px;
+
+
+  }
+
+  &__dayTitleLine {
+    background: #88173B;
+    border-radius: 38px;
+    width: 820px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: -1;
+    margin-top: 7px;
+    padding-left: 249px;
+    padding-right: 22px;
+  }
+
+  &__daynumber {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+
+  }
+
+  &__dayweek {
+    font-family: 'Snell Roundhand';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color: #FFFFFF;
+  }
+
+  &__dayNote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+  &__dayNoteWrapper {
+    display: flex;
+    width: 792px;
+    border-bottom: 1px solid #F1C1B1;
+    line-height: 30px;
+  }
+
+  &__event {
+    width: 644px;
+  }
+
+  &__time {
+    font-size: 16px;
+    line-height: 30px;
+    color: #E8806F;
+    font-weight: 500;
+    width: 148px;
+  }
+
+  &__lastNote {
+    margin-bottom: 19px;
+    border-bottom: 0px;
+  }
+
+  &__highlited {
+    background: #F9E6DF;
+  }
 }
 
 
