@@ -86,11 +86,18 @@ body {
     margin-right: 23px;
     padding: 0;
     box-sizing: border-box;
+    @include media(750) {
+      display: none;
+    }
   }
 
   &__wrapper {
     width: 935px;
     display: flex;
+    @include media(935) {
+      justify-content: space-around;
+      width: 100%;
+    }
   }
 
   &__logo {
@@ -100,6 +107,7 @@ body {
     @include media(950) {
       margin-right: 0px;
     }
+
   }
 
   &__menulist {
@@ -158,12 +166,23 @@ body {
 
   &__wrapper {
     width: 935px;
+    @include media(935) {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
   }
 
   &__wrapper > img {
     width: 106px;
     margin-left: 818px;
+    @include media(935) {
+      margin-left: 0%;
+    }
   }
+
 
   &__wrapper > h1 {
     font-size: 40px;
@@ -173,6 +192,13 @@ body {
     height: 249px;
     line-height: 49px;
     margin-bottom: 37px;
+    @include media(450) {
+      width: 100%;
+    }
+    @include media(380) {
+      font-size: 35px;
+    }
+
   }
 
 }
@@ -199,6 +225,9 @@ body {
   &__wrapper {
     width: 935px;
     border-bottom: #F7ECED 2px solid;
+    @include media(935) {
+      width: 95%;
+    }
   }
 
   &__wrapper > h1 {
@@ -207,16 +236,23 @@ body {
     font-weight: 700;
     line-height: 49px;
     margin-bottom: 68px;
+    @include media(380) {
+      font-size: 35px;
+    }
 
   }
 
   &__content {
     display: flex;
     justify-content: space-between;
+    @include media(935) {
+      width: 95%;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__content > p {
-    width: 560px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -224,6 +260,11 @@ body {
     margin-right: 106px;
     margin-bottom: 100px;
     min-width: 560px;
+    @include media(935) {
+      margin-right: 0px;
+      min-width: 100%;
+      order: 2;
+    }
   }
 
   &__directorVideoBlock {
@@ -231,6 +272,12 @@ body {
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    @include media(935) {
+      order: 1;
+      width: 100%;
+      margin-bottom: 68px;
+    }
+
   }
 
 
@@ -265,6 +312,9 @@ body {
   &__wrapper {
     width: 935px;
     margin-bottom: 49px;
+    @include media(935) {
+      width: 95%;
+    }
   }
 
   &__wrapper > h1 {
@@ -274,6 +324,9 @@ body {
     line-height: 49px;
     max-width: 559px;
     margin-bottom: 72px;
+    @include media(380) {
+      font-size: 35px;
+    }
 
   }
 
@@ -287,6 +340,9 @@ body {
   &__dayTitle {
     display: flex;
     margin-bottom: 12px;
+    @include media(935) {
+      width: 100%;
+    }
 
   }
 
@@ -301,6 +357,13 @@ body {
     justify-content: center;
     z-index: 1;
     position: absolute;
+
+    @include media(450) {
+      position: relative;
+      z-index: 0;
+      width: 100%;
+    }
+
 
   }
 
@@ -329,6 +392,14 @@ body {
     margin-top: 7px;
     padding-left: 249px;
     padding-right: 22px;
+    @include media(935) {
+      width: 100%;
+      justify-content: flex-end;
+    }
+
+    @include media(450) {
+      display: none;
+    }
   }
 
   &__daynumber {
@@ -337,6 +408,9 @@ body {
     font-size: 22px;
     line-height: 27px;
     color: #FFFFFF;
+    @include media(935) {
+      display: none;
+    }
 
   }
 
@@ -362,6 +436,9 @@ body {
     width: 792px;
     border-bottom: 1px solid #F1C1B1;
     line-height: 30px;
+    @include media(792) {
+      width: 100%;
+    }
   }
 
   &__event {
@@ -415,6 +492,9 @@ body {
     display: flex;
     padding-top: 70px;
     flex-direction: column;
+    @include media(935) {
+      width: 95%;
+    }
   }
 
   &__wrapper > h1 {
@@ -424,6 +504,9 @@ body {
     line-height: 49px;
     max-width: 559px;
     margin-bottom: 72px;
+    @include media(380) {
+      font-size: 35px;
+    }
 
   }
 
@@ -433,6 +516,17 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 68px;
+
+    @include media(935) {
+      justify-content: space-around;
+      max-width: 618px;
+      margin: 0 auto;
+    }
+
+    @include media(618) {
+      justify-content: space-around;
+      margin: 0;
+    }
   }
 
   &__item {
@@ -444,6 +538,10 @@ body {
 
   &__bigitem {
     width: 618px;
+    @include media(618) {
+      width: 301px;
+      height: 174px;
+    }
   }
 
   &__button {
@@ -477,6 +575,10 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    @include media(935) {
+      width: 95%;
+      justify-content: center;
+    }
   }
 
   &__itempreview {
@@ -484,6 +586,10 @@ body {
     height: 280px;
     background: #C2C2C2;
     margin-bottom: 15px;
+    @include media(449) {
+      width: 300px;
+      height: 187px;
+    }
   }
 
   &__item {
@@ -528,15 +634,32 @@ body {
     padding-top: 52px;
     display: flex;
     justify-content: space-between;
+    @include media(935) {
+      width: 95%;
+      flex-direction: column;
+      justify-content: space-around;
+    }
   }
 
   &__leftside {
     width: 460px;
+    @include media(935) {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   &__leftsidelogo {
     width: 83px;
     margin-bottom: 36px;
+    @include media(935) {
+      width: 20%;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
   }
 
 
@@ -545,22 +668,38 @@ body {
     font-size: 15px;
     line-height: 26px;
     margin-bottom: 36px;
+    @include media(935) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__adress {
     display: flex;
     align-items: flex-end;
+    @include media(935) {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
   }
 
   &__adressimg {
     width: 41px;
     display: block;
     margin-right: 25px;
+    @include media(935) {
+      margin: 0;
+    }
   }
 
   &__contacts {
     font-size: 13px;
     line-height: 19px;
+    @include media(935) {
+      text-align: center;
+    }
   }
 
   &__contacts > a {
@@ -572,11 +711,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: right;
+    @include media(935) {
+      width: 100%;
+      align-items: center;
+    }
   }
 
   &__rightsidelogo {
     width: 344px;
     margin-bottom: -35px;
+    @include media(935) {
+      width: 70%;
+    }
+
   }
 
   &__social {
@@ -584,6 +731,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @include media(935) {
+      display: none;
+    }
   }
 
 
